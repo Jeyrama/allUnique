@@ -7,3 +7,6 @@ Characters are case-sensitive, e.g. 'a' and 'A' are considered different charact
 
 
 // Solution
+
+let hasUniqueChars = (str) => new Set(str).size === str.length;
+
