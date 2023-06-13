@@ -10,3 +10,8 @@ Characters are case-sensitive, e.g. 'a' and 'A' are considered different charact
 
 let hasUniqueChars = (str) => new Set(str).size === str.length;
 
+// or
+
+function hasUniqueChars(str) {
+  return !/(.).*\1/.test(str);
+}
